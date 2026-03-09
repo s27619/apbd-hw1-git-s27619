@@ -12,3 +12,5 @@ if (string.IsNullOrWhiteSpace(input))
     Console.WriteLine("Error: No numbers provided.");
     return;
 }
+
+Console.WriteLine("Statistics Calculator - Main Version");
