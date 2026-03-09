@@ -6,3 +6,9 @@ Console.WriteLine("Enter numbers separated by space:");
 
 string input = Console.ReadLine();
 string[] dividedParts = input.Split(' ');
+
+if (string.IsNullOrWhiteSpace(input))
+{
+    Console.WriteLine("Error: No numbers provided.");
+    return;
+}
