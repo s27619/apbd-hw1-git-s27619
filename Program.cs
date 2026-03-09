@@ -1,11 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-Console.WriteLine("Calculator");
+Console.WriteLine("Statistics Calculator - Main Version");
 Console.WriteLine("Enter numbers separated by space:");
 
 string input = Console.ReadLine();
-string[] dividedParts = input.Split(' ');
 
 if (string.IsNullOrWhiteSpace(input))
 {
@@ -13,10 +12,8 @@ if (string.IsNullOrWhiteSpace(input))
     return;
 }
 
-Console.WriteLine("Statistics Calculator - Main Version");
+string[] dividedParts = input.Split(' ');
 
-int[] numbers = { 5, 10, 15, 20 };
-
-Console.WriteLine($"Average: {StatisticsHelper.CalculateAverage(numbers)}");
-Console.WriteLine($"Max: {StatisticsHelper.CalculateMax(numbers)}");
-Console.WriteLine($"Min: {StatisticsHelper.CalculateMin(numbers)}");
+Console.WriteLine($"Average: {StatisticsHelper.CalculateAverage(dividedParts)}");
+Console.WriteLine($"Max: {StatisticsHelper.CalculateMax(dividedParts)}");
+Console.WriteLine($"Min: {StatisticsHelper.CalculateMin(dividedParts)}");
