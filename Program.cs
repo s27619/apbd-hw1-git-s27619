@@ -14,3 +14,9 @@ if (string.IsNullOrWhiteSpace(input))
 }
 
 Console.WriteLine("Statistics Calculator - Main Version");
+
+int[] numbers = { 5, 10, 15, 20 };
+
+Console.WriteLine($"Average: {StatisticsHelper.CalculateAverage(numbers)}");
+Console.WriteLine($"Max: {StatisticsHelper.CalculateMax(numbers)}");
+Console.WriteLine($"Min: {StatisticsHelper.CalculateMin(numbers)}");
