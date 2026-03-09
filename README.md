@@ -1,0 +1,1 @@
+Added description for calculator methods.
